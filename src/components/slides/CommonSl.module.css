@@ -1,0 +1,29 @@
+.slide_container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.caption{
+ width: 40vw;
+ text-align: left;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+h2>img{
+    height: 5rem;
+}
+
+p{
+ font-size: 1.6rem;
+
+}
+
+.video_container{
+    width: 32vw;
+    height: auto;
+}
+

@@ -1,0 +1,40 @@
+.navContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+   
+}
+.navContainerNoLogo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10rem;
+}
+
+
+.linkGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 1rem;
+    position: relative;
+
+}
+a{
+    text-decoration: none;
+    font-size:2rem;
+    color: #f1f1f1;
+
+}
+a:hover{
+    color: aqua;
+    transition-duration: 400ms;
+    letter-spacing: 4px;
+}
+
+
+
