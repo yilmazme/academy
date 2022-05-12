@@ -8,20 +8,16 @@
 }
 .slide1_container{
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  position: relative;
   height: 40rem;
-
-  
  
  }
  .slide1_container > p{
      font-size: 1.8rem;
      width: 550px;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
      position: relative;
-     top: 5rem;
-     left: 5rem;
+     right: 15vw;
+   
 
  }
