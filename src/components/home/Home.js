@@ -10,7 +10,6 @@ import Slide5 from "../slides/Slide5";
 import Slide6 from "../slides/Slide6";
 import arrow from "../../asssets/images/ok.png";
 import leftArrow from "../../asssets/images/ok_sol.png";
-import Register from "../register/Register";
 
 function Home() {
   const [smallLogo, setSmallLogo] = useState(false);

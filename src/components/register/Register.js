@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import videoSkate from "../../asssets/videos/academy-Skateboard.mp4";
 import styles from "./Register.module.css";
 import logoSmall from "../../asssets/images/logo_small.png";
 import { Link } from "react-router-dom";
