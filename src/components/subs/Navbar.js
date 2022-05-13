@@ -10,12 +10,12 @@ function Navbar({ showSmallLogo, goHome }) {
 
       <div className={styles.linkGroup}>
         <Link to="#" onClick={goHome}>
-          home
+          ana sayfa
         </Link>
 
-        <Link to="/courses">courses</Link>
+        <Link to="/courses">kurslar</Link>
 
-        <Link to="/register">register</Link>
+        <Link to="/register">kayıt</Link>
       </div>
     </div>
   );

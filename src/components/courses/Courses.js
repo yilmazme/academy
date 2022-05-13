@@ -14,15 +14,15 @@ function Courses() {
         <img src={logoSmall} alt="logo" className={styles.logo_small} />
 
         <div className={styles.linkGroup}>
-          <Link to="/">home</Link>
+          <Link to="/">ana sayfa</Link>
 
-          <Link to="/courses">courses</Link>
+          <Link to="/courses">kurslar</Link>
 
-          <Link to="/register">register</Link>
+          <Link to="/register">kayıt</Link>
         </div>
       </div>
       <div className={styles.intro}>
-        <h2>Courses</h2>
+        <h2>Kurslar</h2>
         <h4>916 Kreatif Ekibinin Öğretici Videoları Yakında Burada Olacak!</h4>
       </div>
       <div className={styles.videos_container}>
