@@ -1,14 +1,41 @@
-.slide_container{
+.main{
+    background-color: #010101;
+    color: #f1f1f1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.navContainer{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 600px;
- }
- 
- .caption{
-  width: 40vw;
-  text-align: left;
- }
+    height: 10rem;
+   
+}
+
+.linkGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 1rem;
+    position: relative;
+
+}
+a{
+    text-decoration: none;
+    font-size:2rem;
+    color: #f1f1f1;
+
+}
+a:hover{
+    color: aqua;
+    transition-duration: 400ms;
+    letter-spacing: 4px;
+}
  
  h2{
      font-size: 3rem;
@@ -19,11 +46,12 @@
   font-size: 1.6rem;
  }
  
- .video_container{
-     width: 20vw;
-     height: auto;
-     visibility: hidden;
- }
+.form_container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
 
  form{
      width: fit-content;

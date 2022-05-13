@@ -1,3 +1,59 @@
 .main{
-    background-color: pink;
+    background-color: #010101;
+    color: #f1f1f1;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    position: relative;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #010101;
+   
+}
+
+.linkGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 1rem;
+    position: relative;
+
+}
+a{
+    text-decoration: none;
+    font-size:2rem;
+    color: #f1f1f1;
+
+}
+a:hover{
+    color: aqua;
+    transition-duration: 400ms;
+    letter-spacing: 4px;
+}
+
+.videos_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+}
+
+.video_container{
+width: 24vw;
 }

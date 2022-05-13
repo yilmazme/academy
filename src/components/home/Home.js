@@ -25,10 +25,10 @@ function Home() {
     }
   };
 
-  const goRegister = () => {
-    setIndex(6);
-    setSmallLogo(true);
-  };
+  // const goRegister = () => {
+  //   setIndex(6);
+  //   setSmallLogo(true);
+  // };
   const goHome = () => {
     setIndex(0);
     setSmallLogo(false);
@@ -36,7 +36,7 @@ function Home() {
 
   return (
     <div className={styles.main}>
-      <Navbar showSmallLogo={smallLogo} goRegister={goRegister} goHome={goHome} />
+      <Navbar showSmallLogo={smallLogo} goHome={goHome} />
       <Carousel
         onSelect={(e) => handleSelect(e)}
         controls={true}
@@ -71,9 +71,6 @@ function Home() {
         </Carousel.Item>
         <Carousel.Item>
           <Slide6 />
-        </Carousel.Item>
-        <Carousel.Item>
-          <Register />
         </Carousel.Item>
       </Carousel>
     </div>

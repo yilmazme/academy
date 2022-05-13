@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import logoSmall from "../../asssets/images/logo_small.png";
 import { Link } from "react-router-dom";
 
-function Navbar({ showSmallLogo, goRegister, goHome }) {
+function Navbar({ showSmallLogo, goHome }) {
   return (
     <div className={showSmallLogo ? styles.navContainer : styles.navContainerNoLogo}>
       {showSmallLogo && <img src={logoSmall} alt="logo" className={styles.logo_small} />}
@@ -15,9 +15,7 @@ function Navbar({ showSmallLogo, goRegister, goHome }) {
 
         <Link to="/courses">courses</Link>
 
-        <Link to="#" onClick={goRegister}>
-          register
-        </Link>
+        <Link to="/register">register</Link>
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import videoSkate from "../../asssets/videos/academy-Skateboard.mp4";
 import styles from "./Register.module.css";
+import logoSmall from "../../asssets/images/logo_small.png";
+import { Link } from "react-router-dom";
 
 function Register() {
   const [user, setUser] = useState({ fullName: "", school: "", email: "" });
@@ -13,10 +15,21 @@ function Register() {
     }, 500);
   };
   return (
-    <div className={styles.slide_container}>
-      <div className={styles.caption}>
+    <div className={styles.main}>
+      <div className={styles.navContainer}>
+        <img src={logoSmall} alt="logo" className={styles.logo_small} />
+
+        <div className={styles.linkGroup}>
+          <Link to="/">home</Link>
+
+          <Link to="/courses">courses</Link>
+
+          <Link to="/register">register</Link>
+        </div>
+      </div>
+      <div className={styles.form_container}>
         <h2>Kaydol</h2>
-        <p>Brief'imizi seninle paylaşabilmemiz için hemen kaydol!</p>
+        <p>Brief'imizi seninle paylaşabilmemiz için hemen kaydol !</p>
         <form onSubmit={onSubmit}>
           <div className={styles.name}>
             <input
@@ -52,9 +65,6 @@ function Register() {
             <input type="submit" value="Kaydol" />
           </div>
         </form>
-      </div>
-      <div>
-        <video className={styles.video_container} src={videoSkate} loop autoPlay muted loading="lazy"></video>
       </div>
     </div>
   );
