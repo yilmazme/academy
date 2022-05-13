@@ -7,11 +7,17 @@ import Slide2 from "../slides/Slide2";
 import Slide3 from "../slides/Slide3";
 import Slide4 from "../slides/Slide4";
 import Slide5 from "../slides/Slide5";
+import Slide6 from "../slides/Slide6";
 import arrow from "../../asssets/images/ok.png";
+import leftArrow from "../../asssets/images/ok_sol.png";
+import Register from "../register/Register";
 
 function Home() {
   const [smallLogo, setSmallLogo] = useState(false);
-  const handleSelect = (ind) => {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (ind, e) => {
+    setIndex(ind);
     if (ind === 0) {
       setSmallLogo(false);
     } else {
@@ -19,10 +25,18 @@ function Home() {
     }
   };
 
+  const goRegister = () => {
+    setIndex(6);
+    setSmallLogo(true);
+  };
+  const goHome = () => {
+    setIndex(0);
+    setSmallLogo(false);
+  };
+
   return (
     <div className={styles.main}>
-      <Navbar showSmallLogo={smallLogo} />
-
+      <Navbar showSmallLogo={smallLogo} goRegister={goRegister} goHome={goHome} />
       <Carousel
         onSelect={(e) => handleSelect(e)}
         controls={true}
@@ -33,9 +47,11 @@ function Home() {
         indicators={false}
         prevLabel="hjhj"
         nextIcon={<img src={arrow} alt="--->" />}
-        prevIcon=""
+        prevIcon={<img src={leftArrow} alt="<---" className={smallLogo ? "" : styles.hide_left_arrow} />}
         keyboard={true}
         touch={true}
+        activeIndex={index}
+        defaultActiveIndex={0}
         // onSlid={handler} //a callback fired when a slide transition ends.
       >
         <Carousel.Item>
@@ -52,6 +68,12 @@ function Home() {
         </Carousel.Item>
         <Carousel.Item>
           <Slide5 />
+        </Carousel.Item>
+        <Carousel.Item>
+          <Slide6 />
+        </Carousel.Item>
+        <Carousel.Item>
+          <Register />
         </Carousel.Item>
       </Carousel>
     </div>

@@ -1,7 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
+import videoSkate from "../../asssets/videos/academy-Skateboard.mp4";
+import styles from "./Register.module.css";
 
 function Register() {
-  return <div>Register</div>;
+  const [user, setUser] = useState({ fullName: "", school: "", email: "" });
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    setTimeout(() => {
+      alert(JSON.stringify(user));
+      setUser({ fullName: "", school: "", email: "" });
+    }, 500);
+  };
+  return (
+    <div className={styles.slide_container}>
+      <div className={styles.caption}>
+        <h2>Kaydol</h2>
+        <p>Brief'imizi seninle paylaşabilmemiz için hemen kaydol!</p>
+        <form onSubmit={onSubmit}>
+          <div className={styles.name}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Eda Karaca"
+              value={user.fullName}
+              onChange={(e) => setUser({ ...user, fullName: e.target.value })}
+              required
+            ></input>
+          </div>
+          <div className={styles.school}>
+            <input
+              type="text"
+              name="school"
+              placeholder="Anadolu Üniversitesi"
+              value={user.school}
+              onChange={(e) => setUser({ ...user, school: e.target.value })}
+              required
+            ></input>
+          </div>
+          <div className={styles.email}>
+            <input
+              type="email"
+              name="email"
+              placeholder="edakaraca@gmail.com"
+              value={user.email}
+              onChange={(e) => setUser({ ...user, email: e.target.value })}
+              required
+            ></input>
+          </div>
+          <div className={styles.submit}>
+            <input type="submit" value="Kaydol" />
+          </div>
+        </form>
+      </div>
+      <div>
+        <video className={styles.video_container} src={videoSkate} loop autoPlay muted loading="lazy"></video>
+      </div>
+    </div>
+  );
 }
 
 export default Register;

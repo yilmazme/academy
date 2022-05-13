@@ -6,3 +6,8 @@
     overflow: hidden;
     position: relative;
 }
+
+
+.hide_left_arrow{
+    visibility: hidden;
+}

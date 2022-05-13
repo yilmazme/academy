@@ -2,7 +2,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-
+   height: 600px;
 }
 
 .caption{
@@ -26,4 +26,8 @@ p{
     width: 32vw;
     height: auto;
 }
-
+.video_container6{
+    width: 32vw;
+    height: auto;
+    visibility: hidden;
+}
