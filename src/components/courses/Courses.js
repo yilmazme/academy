@@ -27,9 +27,6 @@ function Courses() {
       </div>
       <div className={styles.videos_container}>
         <div>
-          <video className={styles.video_container} src={videoHeart} controls loading="lazy"></video>
-        </div>
-        <div>
           <video className={styles.video_container} src={videoCrown} controls loading="lazy"></video>
         </div>
         <div>
@@ -37,6 +34,9 @@ function Courses() {
         </div>
         <div>
           <video className={styles.video_container} src={videoQMark} controls loading="lazy"></video>
+        </div>
+        <div>
+          <video className={styles.video_container} src={videoHeart} controls loading="lazy"></video>
         </div>
       </div>
     </div>
