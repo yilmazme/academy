@@ -1,5 +1,5 @@
 import React from "react";
-import videoQMark from "../../asssets/videos/academy-questionmark.mp4";
+import videoHeart from "../../asssets/videos/academy-heart.mp4";
 import styles from "./CommonSl.module.css";
 
 function Slide6() {
@@ -14,7 +14,7 @@ function Slide6() {
       </div>
       <div>
         {" "}
-        <video className={styles.video_container6} src={videoQMark} loop autoPlay muted loading="lazy"></video>{" "}
+        <video className={styles.video_container} src={videoHeart} loop autoPlay muted loading="lazy"></video>{" "}
       </div>
     </div>
   );
