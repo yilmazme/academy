@@ -49,14 +49,16 @@ a:active{
 .videos_container{
     width: 100%;
     text-align: center;
+    height: fit-content;
 }
 
 .video_container{
-    height: calc(100vh - 15rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border: 2px solid #fff;
+}
+video{
+    height: 70vh;
+    width: fit-content;
+
 }
 .logo_small{
     cursor: pointer;

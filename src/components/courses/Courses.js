@@ -8,22 +8,23 @@ import videoSkate from "../../asssets/videos/academy-Skateboard.mp4";
 import videoQMark from "../../asssets/videos/academy-questionmark.mp4";
 import { useNavigate } from "react-router-dom";
 import { Carousel } from "3d-react-carousal";
+// import frame from "../../asssets/images/border.png";
 
 function Courses() {
   const navigate = useNavigate();
 
   let slides = [
-    <div>
-      <video className={styles.video_container} src={videoCrown} controls loading="lazy"></video>
+    <div className={styles.video_container}>
+      <video src={videoCrown} controls loading="lazy"></video>
     </div>,
-    <div>
-      <video className={styles.video_container} src={videoSkate} controls loading="lazy"></video>
+    <div className={styles.video_container}>
+      <video src={videoSkate} controls loading="lazy"></video>
     </div>,
-    <div>
-      <video className={styles.video_container} src={videoQMark} controls loading="lazy"></video>
+    <div className={styles.video_container}>
+      <video src={videoQMark} controls loading="lazy"></video>
     </div>,
-    <div>
-      <video className={styles.video_container} src={videoHeart} controls loading="lazy"></video>
+    <div className={styles.video_container}>
+      <video src={videoHeart} controls loading="lazy"></video>
     </div>,
   ];
 
