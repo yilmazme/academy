@@ -2,21 +2,31 @@ import React, { useState } from "react";
 import styles from "./Register.module.css";
 import logoSmall from "../../asssets/images/logo_small.png";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
   const [user, setUser] = useState({ fullName: "", school: "", email: "" });
+
+  const navigate = useNavigate();
 
   const onSubmit = (e) => {
     e.preventDefault();
     setTimeout(() => {
       alert(JSON.stringify(user));
       setUser({ fullName: "", school: "", email: "" });
-    }, 500);
+    }, 100);
   };
   return (
     <div className={styles.main}>
       <div className={styles.navContainer}>
-        <img src={logoSmall} alt="logo" className={styles.logo_small} />
+        <img
+          src={logoSmall}
+          alt="logo"
+          className={styles.logo_small}
+          onClick={() => {
+            navigate("/");
+          }}
+        />
 
         <div className={styles.linkGroup}>
           <Link to="/">home</Link>

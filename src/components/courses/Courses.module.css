@@ -63,3 +63,6 @@ a:active{
 width: 24vw;
 height: 22vw;
 }
+.logo_small{
+    cursor: pointer;
+}

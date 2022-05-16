@@ -39,4 +39,6 @@ a:hover{
 }
 
 
-
+.logo_small{
+    cursor:pointer;
+}

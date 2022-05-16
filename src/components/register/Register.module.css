@@ -49,10 +49,13 @@ a:hover{
  }
  
 .form_container{
+   height: calc(100vh - 15rem);
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+
+
 }
 
  form{
@@ -110,3 +113,7 @@ a:hover{
      font-weight: 600;
      letter-spacing: 1px;
  }
+
+ .logo_small{
+    cursor: pointer;
+}

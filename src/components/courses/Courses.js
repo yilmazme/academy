@@ -6,12 +6,22 @@ import videoHeart from "../../asssets/videos/academy-heart.mp4";
 import videoCrown from "../../asssets/videos/academy-crown.mp4";
 import videoSkate from "../../asssets/videos/academy-Skateboard.mp4";
 import videoQMark from "../../asssets/videos/academy-questionmark.mp4";
+import { useNavigate } from "react-router-dom";
 
 function Courses() {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.main}>
       <div className={styles.navContainer}>
-        <img src={logoSmall} alt="logo" className={styles.logo_small} />
+        <img
+          src={logoSmall}
+          alt="logo"
+          className={styles.logo_small}
+          onClick={() => {
+            navigate("/");
+          }}
+        />
 
         <div className={styles.linkGroup}>
           <Link to="/">home</Link>
