@@ -11,3 +11,9 @@
 .hide_left_arrow{
     visibility: hidden;
 }
+
+@media (max-width: 805px) {
+    .main{
+        overflow-y: scroll;
+    }
+}

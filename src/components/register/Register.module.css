@@ -117,3 +117,51 @@ a:hover{
  .logo_small{
     cursor: pointer;
 }
+
+
+@media (max-width: 805px) {
+    .form_container{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 90%;
+        margin: auto;
+        
+        margin-top: 1rem;
+     
+     }
+     
+      form{
+         
+          display: flex;
+          flex-direction: column;
+          width: 90vw;
+          height: 150px;
+      }
+
+
+        .navContainer{
+          
+            height: 8rem;
+           
+        }
+        .navContainerNoLogo{
+     
+            height: 8rem;
+        }
+        
+        
+        .linkGroup{
+        
+            padding: 1rem 1rem;
+         
+        
+        }
+        .logo_small{
+            height: 10rem;
+        }
+    
+
+}

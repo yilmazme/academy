@@ -63,3 +63,37 @@ video{
 .logo_small{
     cursor: pointer;
 }
+
+@media (max-width: 805px) {
+    .navContainer{
+      
+        height: 8rem;
+       
+    }
+    .navContainerNoLogo{
+ 
+        height: 8rem;
+    }
+    
+    
+    .linkGroup{
+    
+        padding: 1rem 1rem;
+     
+    
+    }
+    .logo_small{
+        height: 10rem;
+    }
+
+    .videos_container{
+        margin-top: 2rem;
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+    }
+    
+    .video_container{
+        border: 1px solid #fff;
+    }
+}
