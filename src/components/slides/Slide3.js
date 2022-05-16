@@ -6,7 +6,7 @@ function Slide3() {
   return (
     <div className={styles.slide_container}>
       <div className={styles.caption}>
-        <h2>NineSixteen Academy Nedir?</h2>
+        <h2 className={styles.header}>NineSixteen Academy Nedir?</h2>
         <p>
           {" "}
           9-16’ya ve sektöre yeni yetenekler kazandırmak amacıyla 9-16 tarafından hayata geçirilen eğitim/staj programıdır. Online videolar ilk adım!

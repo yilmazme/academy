@@ -9,13 +9,13 @@ function Navbar({ showSmallLogo, goHome }) {
       {showSmallLogo && <img src={logoSmall} alt="logo" className={styles.logo_small} />}
 
       <div className={styles.linkGroup}>
-        <Link to="#" onClick={goHome}>
-          ana sayfa
+        <Link to="#" onClick={goHome} style={{ margin: 0, padding: 0 }}>
+          home
         </Link>
 
-        <Link to="/courses">kurslar</Link>
+        <Link to="/courses">courses</Link>
 
-        <Link to="/register">kayıt</Link>
+        <Link to="/register">register</Link>
       </div>
     </div>
   );

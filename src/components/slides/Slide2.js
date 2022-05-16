@@ -1,6 +1,7 @@
 import React from "react";
 import videoHeart from "../../asssets/videos/academy-heart.mp4";
 import heart from "../../asssets/images/kalp.png";
+import logoBlack from "../../asssets/images/logo-white.png";
 import styles from "./CommonSl.module.css";
 
 function Slide2() {
@@ -8,7 +9,8 @@ function Slide2() {
     <div className={styles.slide_container}>
       <div className={styles.caption}>
         <h2>
-          9-16 <img src={heart} alt="heart" /> yeni yetenekler
+          <img src={logoBlack} alt="logo-black" style={{ height: "4rem", marginRight: "1rem" }} />
+          <img src={heart} alt="heart" /> Yeni Yetenekler
         </h2>
         <p> Staja giden yolda ilk adımı attın. Bundan sonrası çok keyifli olacak. Hazırsan başlayalım.</p>
       </div>

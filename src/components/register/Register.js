@@ -19,11 +19,11 @@ function Register() {
         <img src={logoSmall} alt="logo" className={styles.logo_small} />
 
         <div className={styles.linkGroup}>
-          <Link to="/">ana sayfa</Link>
+          <Link to="/">home</Link>
 
-          <Link to="/courses">kurslar</Link>
+          <Link to="/courses">courses</Link>
 
-          <Link to="/register">kayıt</Link>
+          <Link to="/register">register</Link>
         </div>
       </div>
       <div className={styles.form_container}>
