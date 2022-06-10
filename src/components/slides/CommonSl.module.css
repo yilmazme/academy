@@ -35,17 +35,7 @@ p{
     width: 32vw;
     height: auto;
 }
-.caption6{
-    width: 50vw;
-    padding-left: 5vw;
-    text-align: left;
-   }
-.video_container6{
-    width: 32vw;
-    height: auto;
-    visibility: hidden;
- 
-}
+
 
 @media (max-width: 805px) {
     .slide_container{

@@ -1,11 +1,11 @@
 import React from "react";
-import videoHeart from "../../asssets/videos/academy-heart.mp4";
+import academyPlay from "../../asssets/videos/academy-play.mp4";
 import styles from "./CommonSl.module.css";
 
 function Slide6() {
   return (
     <div className={styles.slide_container}>
-      <div className={styles.caption6}>
+      <div className={styles.caption}>
         <h2>Online Videolar</h2>
         <p>
           O zaman ufaktan başlıyoruz! <br></br> İlk adımda ihtiyacın olacak tüm bilgiler burada. Seni kreatif ekibimizle baş başa bırakmadan önce son
@@ -14,7 +14,7 @@ function Slide6() {
       </div>
       <div>
         {" "}
-        <video className={styles.video_container6} src={videoHeart} loop autoPlay muted loading="lazy"></video>{" "}
+        <video className={styles.video_container} src={academyPlay} loop autoPlay muted loading="lazy"></video>{" "}
       </div>
     </div>
   );

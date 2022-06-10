@@ -10,6 +10,7 @@ import Slide5 from "../slides/Slide5";
 import Slide6 from "../slides/Slide6";
 import arrow from "../../asssets/images/ok.png";
 import leftArrow from "../../asssets/images/ok_sol.png";
+import Footer from "../subs/Footer";
 
 function Home() {
   const [smallLogo, setSmallLogo] = useState(false);
@@ -72,6 +73,7 @@ function Home() {
           <Slide6 />
         </Carousel.Item>
       </Carousel>
+      <Footer />
     </div>
   );
 }
