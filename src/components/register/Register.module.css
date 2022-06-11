@@ -54,15 +54,14 @@ a:hover{
    flex-direction: column;
    justify-content: center;
    align-items: center;
-
-
+   width: 40vw;
+   margin: auto;
 }
 
  form{
-     width: fit-content;
+     width: 100%;
      display: grid;
      gap: 4px;
-     width: 40vw;
      height: 150px;
  }
 
