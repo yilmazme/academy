@@ -3,9 +3,7 @@ import styles from "./Slide1.module.css";
 import homeVideo from "../../asssets/videos/home.mp4";
 
 function Slide1() {
-  useEffect(() => {
-    console.log("slide1");
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <div className={styles.slide1_container}>

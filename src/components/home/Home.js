@@ -19,6 +19,7 @@ function Home() {
 
   const handleSelect = (ind, e) => {
     setIndex(ind);
+    console.log(ind);
   };
 
   // const goRegister = () => {
@@ -43,7 +44,7 @@ function Home() {
         indicators={false}
         prevLabel="hjhj"
         nextIcon={<img src={arrow} alt="--->" />}
-        prevIcon={<img src={leftArrow} alt="<---" className={index === 1 ? "" : styles.hide_left_arrow} />}
+        prevIcon={<img src={leftArrow} alt="<---" className={index === 0 ? styles.hide_left_arrow : ""} />}
         keyboard={true}
         touch={true}
         activeIndex={index}

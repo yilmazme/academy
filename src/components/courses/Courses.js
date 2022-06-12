@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./Courses.module.css";
 import logoSmall from "../../asssets/images/logo_small.png";
 import { Link } from "react-router-dom";
-import videoHeart from "../../asssets/videos/academy-heart.mp4";
+// import videoHeart from "../../asssets/videos/academy-heart.mp4";
 // import videoCrown from "../../asssets/videos/academy-crown.mp4";
-import videoSkate from "../../asssets/videos/academy-Skateboard.mp4";
-import videoQMark from "../../asssets/videos/academy-questionmark.mp4";
+// import videoSkate from "../../asssets/videos/academy-Skateboard.mp4";
+// import videoQMark from "../../asssets/videos/academy-questionmark.mp4";
 import ComingSoonVideo from "../../asssets/videos/ComingSoonVideo.mp4";
 import { useNavigate } from "react-router-dom";
 import { Carousel } from "3d-react-carousal";
@@ -19,13 +19,13 @@ function Courses() {
       <video src={ComingSoonVideo} controls loading="lazy"></video>
     </div>,
     <div className={styles.video_container}>
-      <video src={videoSkate} controls loading="lazy"></video>
+      <video src={ComingSoonVideo} controls loading="lazy"></video>
     </div>,
     <div className={styles.video_container}>
-      <video src={videoQMark} controls loading="lazy"></video>
+      <video src={ComingSoonVideo} controls loading="lazy"></video>
     </div>,
     <div className={styles.video_container}>
-      <video src={videoHeart} controls loading="lazy"></video>
+      <video src={ComingSoonVideo} controls loading="lazy"></video>
     </div>,
   ];
 

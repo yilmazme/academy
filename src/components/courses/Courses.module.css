@@ -53,10 +53,11 @@ a:active{
 
 .video_container{
     border: 2px solid #fff;
+    width: 80%;
 }
 video{
-    height: 70vh;
-    width: fit-content;
+    height: 100%;
+    width: 100%;
 
 }
 .logo_small{
