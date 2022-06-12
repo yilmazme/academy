@@ -14,16 +14,11 @@ import Footer from "../subs/Footer";
 import Slide7 from "../slides/Slide7";
 
 function Home() {
-  const [smallLogo, setSmallLogo] = useState(false);
+  // const [smallLogo, setSmallLogo] = useState(false);
   const [index, setIndex] = useState(0);
 
   const handleSelect = (ind, e) => {
     setIndex(ind);
-    if (ind === 0) {
-      setSmallLogo(false);
-    } else {
-      setSmallLogo(true);
-    }
   };
 
   // const goRegister = () => {
@@ -32,12 +27,12 @@ function Home() {
   // };
   const goHome = () => {
     setIndex(0);
-    setSmallLogo(false);
+    // setSmallLogo(true);
   };
 
   return (
     <div className={styles.main}>
-      <Navbar showSmallLogo={smallLogo} goHome={goHome} />
+      <Navbar goHome={goHome} />
       <Carousel
         onSelect={(e) => handleSelect(e)}
         controls={true}
@@ -48,7 +43,7 @@ function Home() {
         indicators={false}
         prevLabel="hjhj"
         nextIcon={<img src={arrow} alt="--->" />}
-        prevIcon={<img src={leftArrow} alt="<---" className={smallLogo ? "" : styles.hide_left_arrow} />}
+        prevIcon={<img src={leftArrow} alt="<---" className={index === 1 ? "" : styles.hide_left_arrow} />}
         keyboard={true}
         touch={true}
         activeIndex={index}
