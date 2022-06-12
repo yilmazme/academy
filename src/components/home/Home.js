@@ -19,7 +19,6 @@ function Home() {
 
   const handleSelect = (ind, e) => {
     setIndex(ind);
-    console.log(ind);
   };
 
   // const goRegister = () => {
