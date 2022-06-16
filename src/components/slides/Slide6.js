@@ -14,7 +14,9 @@ function Slide6() {
       </div>
       <div>
         {" "}
-        <video className={styles.video_container} src={academyPlay} loop autoPlay muted loading="lazy"></video>{" "}
+        <video className={styles.video_container} autoPlay loop="loop" muted playsInline preload="auto">
+          <source src={academyPlay} type="video/mp4"></source>
+        </video>{" "}
       </div>
     </div>
   );

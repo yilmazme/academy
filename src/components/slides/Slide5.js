@@ -15,7 +15,9 @@ function Slide5() {
         </p>
       </div>
       <div>
-        <video className={styles.video_container} src={videoQMark} loop autoPlay muted loading="lazy"></video>
+        <video className={styles.video_container} autoPlay loop="loop" muted playsInline preload="auto">
+          <source src={videoQMark} type="video/mp4"></source>
+        </video>
       </div>
     </div>
   );

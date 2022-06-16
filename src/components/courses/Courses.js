@@ -16,16 +16,24 @@ function Courses() {
 
   let slides = [
     <div className={styles.video_container}>
-      <video src={ComingSoonVideo} controls loading="lazy"></video>
+      <video controls preload="auto">
+        <source src={ComingSoonVideo} type="video/mp4"></source>
+      </video>
     </div>,
     <div className={styles.video_container}>
-      <video src={ComingSoonVideo} controls loading="lazy"></video>
+      <video controls preload="auto">
+        <source src={ComingSoonVideo} type="video/mp4"></source>
+      </video>
     </div>,
     <div className={styles.video_container}>
-      <video src={ComingSoonVideo} controls loading="lazy"></video>
+      <video controls preload="auto">
+        <source src={ComingSoonVideo} type="video/mp4"></source>
+      </video>
     </div>,
     <div className={styles.video_container}>
-      <video src={ComingSoonVideo} controls loading="lazy"></video>
+      <video controls preload="auto">
+        <source src={ComingSoonVideo} type="video/mp4"></source>
+      </video>
     </div>,
   ];
 
