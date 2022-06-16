@@ -76,6 +76,7 @@ function Slide7() {
             height: "1.2rem",
             marginTop: "5px",
             fontSize: "1.2rem",
+            width: "100% !important",
           }}
         >
           {registerMessage}
