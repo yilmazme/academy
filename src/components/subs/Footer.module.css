@@ -22,20 +22,20 @@
     .footer {
         width: 100vw;
         height: 3rem;
-        position: relative;
+        position: fixed;
         bottom: 0;
-        padding-left: 0.2rem;
     }
-
+    
     .instaLogo {
         cursor: pointer;
+        position: absolute;
+        left: 0;
     }
-
+    
     .by916 {
-
+    
         position: absolute;
         left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-73%, 0);
     }
 }

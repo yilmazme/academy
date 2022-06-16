@@ -116,6 +116,9 @@ p{
         text-align: center;
 
        }
+    .caption>p{
+        font-size: 1rem;
+    }
 
        .video_container{
         width: 90vw;
@@ -137,7 +140,7 @@ p{
        
        }
     h2{
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-family: "GilroyBold";
     }
     h2>img{

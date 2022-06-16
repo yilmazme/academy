@@ -1,31 +1,13 @@
 import React, { useState } from "react";
 import styles from "./CommonSl.module.css";
 import axios from "axios";
-import { useSnackbar } from "react-simple-snackbar";
 
 function Slide7() {
   const [user, setUser] = useState({ fullName: "", school: "", email: "" });
-
-  const options = {
-    position: "top-center",
-    style: {
-      backgroundColor: "#30ce88",
-      border: "2px solid #fff",
-      color: "#fff",
-      //fontFamily: "Menlo, monospace",
-      fontSize: "20px",
-      textAlign: "center",
-    },
-    closeStyle: {
-      color: "lightcoral",
-      fontSize: "16px",
-    },
-  };
-  const [openSnackbar] = useSnackbar(options);
+  const [registerMessage, setRegisterMessage] = useState("");
 
   const onSubmit = (e) => {
     e.preventDefault();
-    openSnackbar(`Tebrikler ${user.fullName}! Kaydınız başarıyla alınmıştır.`);
     axios
       .post("https://suiteapidev.9-16.app/api/Academy/register", {
         name: user.fullName,
@@ -34,17 +16,17 @@ function Slide7() {
       })
       .then(function (response) {
         console.log(response);
-        setTimeout(() => {
-          setUser({ fullName: "", school: "", email: "" });
-          openSnackbar(`Tebrikler ${user.fullName}! Kaydınız başarıyla alınmıştır.`);
-        }, 200);
+        setUser({ fullName: "", school: "", email: "" });
+        setRegisterMessage(`Tebrikler ${user.fullName}! Kaydınız başarıyla alınmıştır.`);
       })
       .catch(function (error) {
         console.log(error);
-        setTimeout(() => {
-          openSnackbar(`Üzgünüz! Bir hata oluştu :( Lütfen daha sonra tekrar deneyin.`);
-        }, 200);
+        setRegisterMessage(`Üzgünüz! Bir hata oluştu :( Lütfen daha sonra tekrar deneyin.`);
       });
+
+    setTimeout(() => {
+      setRegisterMessage("");
+    }, 5000);
   };
   return (
     <div className={styles.slide_container}>
@@ -88,6 +70,16 @@ function Slide7() {
             <input type="submit" value="Kaydol" />
           </div>
         </form>
+        <p
+          style={{
+            visibility: registerMessage.length ? "visible" : "hidden",
+            height: "1.2rem",
+            marginTop: "5px",
+            fontSize: "1.2rem",
+          }}
+        >
+          {registerMessage}
+        </p>
       </div>
       <div>
         {/* {" "}
