@@ -1,6 +1,20 @@
-.app{
+.app {
   width: 100vw;
   height: 100vh;
   margin: 0;
   word-break: keep-all;
+}
+
+
+.carousel-control-next>img,
+.carousel-control-prev>img {
+  width: 4rem;
+}
+
+@media (max-width: 805px) {
+
+  .carousel-control-next>img,
+  .carousel-control-prev>img {
+    width: 2.5rem;
+  }
 }
