@@ -9,9 +9,9 @@ function Slide5() {
         <h2>Nasıl Başvurabilirim?</h2>
         <p>
           {" "}
-          Öncelikle kaydol. Ardından senin için hazırladığımız online eğitim videolarını izle. 20 Haziran’da mail’ine brief gelmiş olacak. 1 hafta
-          içinde bize en iyi işini gönder. Gelen işleri 9-16 kreatif ekibi değerlendirecek ve en iyi 15 işin sahibi NineSixteen Academy programına
-          katılacak.
+          Öncelikle kaydol. Ardından senin için hazırladığımız online eğitim videolarını izle. 18 Temmuz’da mail’ine brief gelmiş olacak. 1 hafta
+          içinde bize en iyi işini gönder. Gelen işleri <nobr>9-16</nobr> kreatif ekibi değerlendirecek ve en iyi 15 işin sahibi NineSixteen Academy
+          programına katılacak.
         </p>
       </div>
       <div>

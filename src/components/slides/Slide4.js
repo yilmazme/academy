@@ -8,8 +8,8 @@ function Slide4() {
       <div className={styles.caption}>
         <h2>Kimler Başvurabilir?</h2>
         <p>
-          Motion Design alanında kendini geliştirmek istiyorsan, Üniversite 3. ve 4. sınıf öğrencisi ya da yeni mezunsan, ve kendine güveniyorsan,
-          NineSixteen Academy’e kesin başvurmalısın!
+          Motion Design alanında kendini geliştirmek istiyorsan, Üniversite 3. ve 4. sınıf öğrencisi ya da yeni mezunsan, <nobr>ve kendine </nobr>
+          güveniyorsan, NineSixteen Academy’e kesin başvurmalısın!
         </p>
       </div>
       <div>

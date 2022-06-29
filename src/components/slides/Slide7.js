@@ -32,7 +32,7 @@ function Slide7() {
     <div className={styles.slide_container}>
       <div className={styles.caption}>
         <h2>Kaydol</h2>
-        <p>Brief'imizi seninle paylaşabilmemiz için hemen kaydol !</p>
+        <p>Brief'imizi seninle paylaşabilmemiz için hemen kaydol!</p>
       </div>
       <div className={styles.form_container}>
         <form onSubmit={onSubmit}>
@@ -40,7 +40,7 @@ function Slide7() {
             <input
               type="text"
               name="name"
-              placeholder="Eda Karaca"
+              placeholder="Ad Soyad"
               value={user.fullName}
               onChange={(e) => setUser({ ...user, fullName: e.target.value })}
               required
@@ -50,7 +50,7 @@ function Slide7() {
             <input
               type="text"
               name="school"
-              placeholder="Anadolu Üniversitesi"
+              placeholder="Üniversite"
               value={user.school}
               onChange={(e) => setUser({ ...user, school: e.target.value })}
               required
@@ -60,7 +60,7 @@ function Slide7() {
             <input
               type="email"
               name="email"
-              placeholder="edakaraca@gmail.com"
+              placeholder="Mail"
               value={user.email}
               onChange={(e) => setUser({ ...user, email: e.target.value })}
               required

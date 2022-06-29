@@ -9,9 +9,9 @@ function Slide3() {
         <h2 className={styles.header}>NineSixteen Academy Nedir?</h2>
         <p>
           {" "}
-          9-16’ya ve sektöre yeni yetenekler kazandırmak amacıyla 9-16 tarafından hayata geçirilen eğitim/staj programıdır. Online videolar ilk adım!
-          Ardından 1 aylık program ile 9-16 kreatif ekibinden öğreniyor, Creative Video Designer gibi çalışmayı deneyimliyorsun. Hazır olduğunda
-          ekibizdeki yerini alıyorsun. <br></br>
+          <nobr>9-16</nobr>’ya ve sektöre yeni yetenekler kazandırmak amacıyla <nobr>9-16</nobr> tarafından hayata geçirilen eğitim/staj programıdır.
+          Online videolar ilk adım! Ardından 1 aylık program ile <nobr>9-16</nobr> kreatif ekibinden öğreniyor, Creative Video Designer gibi çalışmayı
+          deneyimliyorsun. Hazır olduğunda ekibizdeki yerini alıyorsun. <br></br>
           Nasıl ama?
         </p>
       </div>

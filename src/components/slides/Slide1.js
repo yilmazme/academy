@@ -12,7 +12,10 @@ function Slide1() {
       <video className={styles.video_container} autoPlay loop="loop" muted playsInline preload="auto">
         <source src={homeVideo} type="video/mp4"></source>
       </video>
-      <p>NineSixteen Academy, 9-16’ya ve sektöre yeni yetenekler kazandırmak amacıyla 9-16 tarafından hayata geçirilen eğitim/staj programıdır.</p>
+      <p>
+        NineSixteen Academy, <nobr>9-16</nobr>’ya ve sektöre yeni yetenekler kazandırmak amacıyla <nobr>9-16</nobr> tarafından hayata geçirilen
+        eğitim/staj programıdır.
+      </p>
     </div>
   );
 }

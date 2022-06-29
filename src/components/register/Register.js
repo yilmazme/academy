@@ -56,13 +56,13 @@ function Register() {
       </div>
       <div className={styles.form_container}>
         <h2>Kaydol</h2>
-        <p>Brief'imizi seninle paylaşabilmemiz için hemen kaydol !</p>
+        <p>Brief'imizi seninle paylaşabilmemiz için hemen kaydol!</p>
         <form onSubmit={onSubmit}>
           <div className={styles.name}>
             <input
               type="text"
               name="name"
-              placeholder="Eda Karaca"
+              placeholder="Ad Soyad"
               value={user.fullName}
               onChange={(e) => setUser({ ...user, fullName: e.target.value })}
               required
@@ -72,7 +72,7 @@ function Register() {
             <input
               type="text"
               name="school"
-              placeholder="Anadolu Üniversitesi"
+              placeholder="Üniversite"
               value={user.school}
               onChange={(e) => setUser({ ...user, school: e.target.value })}
               required
@@ -82,7 +82,7 @@ function Register() {
             <input
               type="email"
               name="email"
-              placeholder="edakaraca@gmail.com"
+              placeholder="Mail"
               value={user.email}
               onChange={(e) => setUser({ ...user, email: e.target.value })}
               required
