@@ -1,17 +1,27 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import instaLogo from "../../asssets/images/instagram.png";
-import by916 from "../../asssets/images/by-916.png";
+import bilgi916 from "../../asssets/images/916Bilgi.png";
+import bilgiTalent from "../../asssets/images/bilgiTalent.png";
 
 function Footer() {
   return (
     <div className={styles.footer}>
-      <a href="https://www.instagram.com/9_16/" target="_blank" rel="noreferrer">
-        <img src={instaLogo} alt="insta-logo" style={{ height: "2rem", marginLeft: "1rem" }} className={styles.instaLogo} />
-      </a>
-      <a href="https://www.9-16.com/" target="_blank" rel="noreferrer">
-        <img src={by916} alt="916-logo" style={{ height: "2rem", marginLeft: "1rem" }} className={styles.by916} />
-      </a>
+      <div className={styles.logoContainer}>
+        <a href="https://www.instagram.com/9_16/" target="_blank" rel="noreferrer">
+          <img src={instaLogo} alt="insta-logo" className={styles.instaLogo} />
+        </a>
+      </div>
+      <div className={styles.logoContainer}>
+        <a href="https://www.9-16.com/" target="_blank" rel="noreferrer">
+          <img src={bilgi916} alt="bilgi-916-logo" className={styles.bilgi916Logo} />
+        </a>
+      </div>
+      <div className={styles.logoContainer}>
+        <a href="https://www.bilgi.edu.tr/tr/talent/" target="_blank" rel="noreferrer">
+          <img src={bilgiTalent} alt="bilgi-talent-logo" className={styles.bilgiTalentLogo} />
+        </a>
+      </div>
     </div>
   );
 }

@@ -13,8 +13,8 @@ function Slide1() {
         <source src={homeVideo} type="video/mp4"></source>
       </video>
       <p>
-        NineSixteen Academy, <nobr>9-16</nobr>’ya ve sektöre yeni yetenekler kazandırmak amacıyla <nobr>9-16</nobr> tarafından hayata geçirilen
-        eğitim/staj programıdır.
+        NineSixteen Academy, <nobr>9-16</nobr>’ya ve sektöre yeni yetenekler kazandırmak amacıyla <nobr>9-16</nobr> ve <nobr>Bilgi Üniversitesi</nobr>{" "}
+        tarafından hayata geçirilen eğitim/staj programıdır.
       </p>
     </div>
   );

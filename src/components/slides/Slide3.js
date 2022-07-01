@@ -10,8 +10,8 @@ function Slide3() {
         <p>
           {" "}
           <nobr>9-16</nobr>’ya ve sektöre yeni yetenekler kazandırmak amacıyla <nobr>9-16</nobr> tarafından hayata geçirilen eğitim/staj programıdır.
-          Online videolar ilk adım! Ardından 1 aylık program ile <nobr>9-16</nobr> kreatif ekibinden öğreniyor, Creative Video Designer gibi çalışmayı
-          deneyimliyorsun. Hazır olduğunda ekibizdeki yerini alıyorsun. <br></br>
+          Online videolar ilk adım! Ardından 3 haftalık program ile <nobr>9-16</nobr> kreatif ekibinden öğreniyor, Creative Video Designer gibi
+          çalışmayı deneyimliyorsun. Hazır olduğunda ekibizdeki yerini alıyorsun. <br></br>
           Nasıl ama?
         </p>
       </div>
