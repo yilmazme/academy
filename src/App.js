@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
 import Register from "./components/register/Register";
 import SnackbarProvider from "react-simple-snackbar";
+import React from "react";
 function App() {
   return (
     <SnackbarProvider>
