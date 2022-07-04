@@ -14,25 +14,19 @@ import Footer from "../subs/Footer";
 import Slide7 from "../slides/Slide7";
 
 function Home() {
-  // const [smallLogo, setSmallLogo] = useState(false);
   const [index, setIndex] = useState(0);
 
   const handleSelect = (ind, e) => {
     setIndex(ind);
   };
 
-  // const goRegister = () => {
-  //   setIndex(6);
-  //   setSmallLogo(true);
+  // const goFirstSlide = () => {
+  //   setIndex(0);
   // };
-  const goHome = () => {
-    setIndex(0);
-    // setSmallLogo(true);
-  };
 
   return (
     <div className={styles.main}>
-      <Navbar goHome={goHome} />
+      <Navbar />
       <Carousel
         onSelect={(e) => handleSelect(e)}
         controls={true}

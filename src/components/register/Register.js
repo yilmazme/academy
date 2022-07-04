@@ -1,15 +1,12 @@
 import React, { useState } from "react";
 import styles from "./Register.module.css";
-import logoSmall from "../../asssets/images/logo_small.png";
-import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import Navbar from "../subs/Navbar";
 
 function Register() {
   const [user, setUser] = useState({ fullName: "", school: "", email: "" });
 
   const [registerMessage, setRegisterMessage] = useState("");
-
-  const navigate = useNavigate();
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -19,13 +16,13 @@ function Register() {
         university: user.school,
         email: user.email,
       })
-      .then(function (response) {
+      .then(function(response) {
         console.log(response);
 
         setUser({ fullName: "", school: "", email: "" });
         setRegisterMessage(`Tebrikler ${user.fullName}! Kaydınız başarıyla alınmıştır.`);
       })
-      .catch(function (error) {
+      .catch(function(error) {
         console.log(error);
 
         setRegisterMessage(`Üzgünüz! Bir hata oluştu :( Lütfen daha sonra tekrar deneyin.`);
@@ -36,24 +33,7 @@ function Register() {
   };
   return (
     <div className={styles.main}>
-      <div className={styles.navContainer}>
-        <img
-          src={logoSmall}
-          alt="logo"
-          className={styles.logo_small}
-          onClick={() => {
-            navigate("/");
-          }}
-        />
-
-        <div className={styles.linkGroup}>
-          <Link to="/">home</Link>
-
-          <Link to="/courses">courses</Link>
-
-          <Link to="/register">register</Link>
-        </div>
-      </div>
+      <Navbar />
       <div className={styles.form_container}>
         <h2>Kaydol</h2>
         <p>Brief'imizi seninle paylaşabilmemiz için hemen kaydol!</p>

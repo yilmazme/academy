@@ -3,17 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10rem;
-   
+    height: 10rem;   
 }
-.navContainerNoLogo{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 10rem;
-}
-
 
 .linkGroup{
     display: flex;
@@ -46,23 +37,21 @@ a:hover{
 @media (max-width: 805px) {
 
     .navContainer{
-      
         height: 8rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
        
     }
-    .navContainerNoLogo{
  
-        height: 8rem;
-    }
-    
-    
     .linkGroup{
-    
-        padding: 1rem 1rem;
-     
-    
+         padding: 1.5rem 1rem;
+    }
+    a{
+        font-size: 1.5rem;
     }
     .logo_small{
-        height: 10rem;
+        height: 5rem;
     }
 }
