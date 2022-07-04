@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     height: 10rem;   
+    position: relative;
 }
 
 .linkGroup{
@@ -29,9 +30,30 @@ a:hover{
     letter-spacing: 4px;
 }
 
+.active{
+    color: rgb(247, 247, 107);
+}
 
+@keyframes color-change {
+    0% { background-color: rgba(233, 34, 34); }
+    25% { background-color: rgba(212, 20, 238); }
+    50% { background-color: rgba(13, 149, 228); }
+    100% { background-color: rgba(245, 230, 17); }
+  }
 .logo_small{
     cursor:pointer;
+   
+}
+.logo_container:after{
+    content: "";
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    animation: color-change 1s infinite alternate ;
+    position: absolute;
+    bottom: 0;
+    left: 10rem;
 }
 
 @media (max-width: 805px) {
@@ -50,6 +72,17 @@ a:hover{
     }
     a{
         font-size: 1.5rem;
+    }
+    .logo_container:after{
+        content: "";
+        display: inline-block;
+        height: 1.3rem;
+        width: 1.3rem;
+        border-radius: 50%;
+        animation: color-change 2s infinite forwards ;
+        position: absolute;
+        bottom: 3.3rem;
+        left: 4rem;
     }
     .logo_small{
         height: 5rem;

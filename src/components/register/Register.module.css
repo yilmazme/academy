@@ -103,6 +103,9 @@
           width: 90vw;
           height: 50vh;
       }
-    
+      .confirmation{
+         position: relative;
+         bottom: 10rem;
+      }
 
 }

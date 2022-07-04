@@ -16,7 +16,7 @@
   .carousel-control-next>img,
   .carousel-control-prev>img {
     position: fixed;
-    bottom:6rem;
+    bottom:5rem;
     width: 2rem;
   }
 }

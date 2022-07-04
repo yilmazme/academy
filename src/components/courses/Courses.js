@@ -3,6 +3,7 @@ import styles from "./Courses.module.css";
 import ComingSoonVideo from "../../asssets/videos/ComingSoonVideo.mp4";
 import { Carousel } from "3d-react-carousal";
 import Navbar from "../subs/Navbar";
+import Footer from "../subs/Footer";
 
 function Courses() {
   let slides = [
@@ -34,6 +35,7 @@ function Courses() {
       <div className={styles.videos_container}>
         <Carousel slides={slides} autoplay={false} />
       </div>
+      <Footer />
     </div>
   );
 }

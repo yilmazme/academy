@@ -145,6 +145,10 @@ p{
         width: 90vw;
      
      }
+     .confirmation{
+        position: relative;
+        bottom: 10rem;
+     }
     p{
         font-size: 1rem !important;
        

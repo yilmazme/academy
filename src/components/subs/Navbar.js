@@ -1,27 +1,35 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import logoSmall from "../../asssets/images/logo_small.png";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
   return (
     <div className={styles.navContainer}>
-      <img
-        src={logoSmall}
-        alt="logo"
-        className={styles.logo_small}
-        onClick={() => {
-          navigate("/");
-        }}
-      />
+      <div className={styles.logo_container}>
+        <img
+          src={logoSmall}
+          alt="logo"
+          className={styles.logo_small}
+          onClick={() => {
+            navigate("/");
+          }}
+        />
+      </div>
 
       <div className={styles.linkGroup}>
-        <Link to="/">home</Link>
+        <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
+          home
+        </NavLink>
 
-        <Link to="/courses">courses</Link>
+        <NavLink to="/courses" className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
+          courses
+        </NavLink>
 
-        <Link to="/register">register</Link>
+        <NavLink to="/register" className={({ isActive }) => (isActive ? styles.active : styles.inactive)}>
+          register
+        </NavLink>
       </div>
     </div>
   );

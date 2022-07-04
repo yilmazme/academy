@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import styles from "./Register.module.css";
 import axios from "axios";
 import Navbar from "../subs/Navbar";
+import Footer from "../subs/Footer";
 
 function Register() {
   const [user, setUser] = useState({ fullName: "", school: "", email: "" });
 
-  const [registerMessage, setRegisterMessage] = useState("");
+  const [registerMessage, setRegisterMessage] = useState("asdadadad adadadadasd");
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -74,14 +75,16 @@ function Register() {
         </form>
         <p
           style={{
-            visibility: registerMessage.length ? "visible" : "hidden",
+            visibility: registerMessage.length ? "visible" : "visible",
             height: "2rem",
             marginTop: "10px",
           }}
+          className={styles.confirmation}
         >
           {registerMessage}
         </p>
       </div>
+      <Footer />
     </div>
   );
 }

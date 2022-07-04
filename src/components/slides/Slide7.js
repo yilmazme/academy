@@ -14,12 +14,12 @@ function Slide7() {
         university: user.school,
         email: user.email,
       })
-      .then(function (response) {
+      .then(function(response) {
         console.log(response);
         setUser({ fullName: "", school: "", email: "" });
         setRegisterMessage(`Tebrikler ${user.fullName}! Kaydınız başarıyla alınmıştır.`);
       })
-      .catch(function (error) {
+      .catch(function(error) {
         console.log(error);
         setRegisterMessage(`Üzgünüz! Bir hata oluştu :( Lütfen daha sonra tekrar deneyin.`);
       });
@@ -78,14 +78,13 @@ function Slide7() {
             fontSize: "1.2rem",
             width: "100% !important",
           }}
+          className={styles.confirmation}
         >
           {registerMessage}
         </p>
       </div>
-      <div>
-        {/* {" "}
-      <video className={styles.video_container} src={academyPlay} loop autoPlay muted loading="lazy"></video>{" "} */}
-      </div>
+      <div>{/* {" "}
+      <video className={styles.video_container} src={academyPlay} loop autoPlay muted loading="lazy"></video>{" "} */}</div>
     </div>
   );
 }
