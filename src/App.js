@@ -4,7 +4,6 @@ import Courses from "./components/courses/Courses";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/home/Home";
 import Register from "./components/register/Register";
-
 function App() {
   return (
     <div className="app">
