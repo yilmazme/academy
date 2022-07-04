@@ -7,7 +7,7 @@ import Footer from "../subs/Footer";
 function Register() {
   const [user, setUser] = useState({ fullName: "", school: "", email: "" });
 
-  const [registerMessage, setRegisterMessage] = useState("asdadadad adadadadasd");
+  const [registerMessage, setRegisterMessage] = useState("");
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -75,7 +75,7 @@ function Register() {
         </form>
         <p
           style={{
-            visibility: registerMessage.length ? "visible" : "visible",
+            visibility: registerMessage.length ? "visible" : "hidden",
             height: "2rem",
             marginTop: "10px",
           }}
